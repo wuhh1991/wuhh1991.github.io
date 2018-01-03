@@ -7,7 +7,6 @@ author:     "keysaim"
 header-img: ""
 catalog: true
 tags:
-    - github
     - 教程
 ---
 
