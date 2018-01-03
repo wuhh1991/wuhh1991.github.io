@@ -1,22 +1,24 @@
 # Site settings
 title: 旧梦似流水
-SEOTitle: 旧梦似流水 | 吴煌辉的博客
-header-img: img/home-bg.jpg
+SEOTitle: 旧梦似流水的博客 | Wuhh Blog
+header-img: img/home-bg-hill.jpg
 email: 387703391@qq.com
-description: ""
-keyword: "iOS开发"
+description: "描述"
+keyword: "iOS开发，心情"
 url: "https://wuhh1991.github.io"              # your host, for absolute URL
-baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-#twitter_username:  huxpro
-facebook_username:  huxpro
+#weibo_username:     keysaim
+zhihu_username:     keysaim
+github_username:    keysaim
+#twitter_username:   keysaim
+jianshu_username:   e413b88a622b
+#facebook_username:  keysaim
+# linkedin_username:  firstname-lastname-idxxxx
 
 
 
@@ -25,8 +27,7 @@ facebook_username:  huxpro
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 
 
 
@@ -43,33 +44,45 @@ gems: [jekyll-paginate]
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
+#markdown: redcarpet
+#redcarpet:
+    #extensions: ["tables", "fenced_code_blocks"]
 
 
 
 # Disqus settings
-#disqus_username: _your_disqus_short_name_
+#disqus_username: keysaim
 
-# Duoshuo settings
-duoshuo_username: huxblog
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+# Netease setttings
+netease_comment: false
 
+# For gitment
+gitment: true
+gitment-repo: comments
+gitment-client-id: 8d920ad685683a529e83
+gitment-client-secret: ffabf134048e374883ee67d3786a9a6b7d8d3cdc
 
+# For test
+#gitment-repo: test-comments
+#gitment-client-id: 3687ee49c8a69a86e75e
+#gitment-client-secret: 53604cc6e16fe16160b36be7d2f379e46994b728
 
 
 # Analytics settings
-# Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Baidu Analytics 
+# ba_track_id: [your track id]
+
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id: 'UA-104622100-1'
+ga_domain: keysaim.github.io
 
 
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar: false                           # whether or not using Sidebar.
+sidebar-about-description: "边栏描述"
+# TODO need add the headshot
+sidebar-avatar: /img/avatar-.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -79,22 +92,17 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
 # Friends
-friends: [
-    {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
-    }
-]
+#friends: []
+
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+anchorjs-visible: hover
+anchorjs-icon: §
+anchorjs-placement: right
+
